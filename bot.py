@@ -1,10 +1,9 @@
-import os
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 from commands import music, video
 
-# Bot token from environment variable
-TOKEN = os.getenv('TELEGRAM_TOKEN')
+# Bot token
+TOKEN = '7736869978:AAH8wpYSHwAz1ulFEGftx7giGqDWrFnub4s'
 
 def start(update: Update, context: CallbackContext) -> None:
     update.message.reply_text('Hello! I am your command bot. Use /music or /video to explore.')
